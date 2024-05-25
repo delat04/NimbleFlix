@@ -1,0 +1,39 @@
+.flow-pane{
+    -fx-background-color : #0e0e0e;
+}
+.vb{
+    -fx-padding: 0 0 10 0;
+}
+.vb:hover{
+    -fx-background-color : black;
+}
+.name_label{
+    -fx-text-fill:#d0a310;
+    -fx-padding:0 10 10 10;
+    -fx-font-size:15;
+}
+.subscribe{
+    -fx-background-color:#1a87c6;
+    -fx-pref-width:70;
+    -fx-text-fill:white;
+    -fx-margin:10;
+}
+
+.unsubscribe{
+    -fx-background-color:#5e5e5e;
+    -fx-pref-width:70;
+    -fx-text-fill:white;
+    -fx-margin:10;
+}
+
+
+.edit_button{
+               -fx-background-color: #8f0c0c;
+               -fx-pref-width:70;
+               -fx-text-fill:white;
+               -fx-margin:10;
+}
+
+.background{
+    -fx-background-image:url("src/main/resources/imgs/bb.jpg");
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="777.0" style="-fx-background-color: #0e0e0e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.show.ShowAccount">
+   <children>
+      <HBox layoutX="181.0" layoutY="34.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #0a0a0a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Region minHeight="10.0" minWidth="10.0" prefHeight="31.0" prefWidth="40.0" />
+            <Button fx:id="toggle_menu_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toggle_menu" prefHeight="24.0" prefWidth="83.0" style="-fx-background-color: transparent;" text="&gt;&gt;&gt;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Region prefHeight="29.0" prefWidth="1400.0" />
+            <Button fx:id="eb" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit_" prefHeight="15.0" prefWidth="15.0" style="-fx-padding: 0; -fx-background-color: #1a1a1a; -fx-border-radius: 10; -fx-background-radius: 10;" text="X" textFill="#727050">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+            <Region minWidth="10.0" prefHeight="25.0" prefWidth="16.0" />
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollpane" hbarPolicy="NEVER" layoutX="141.0" layoutY="25.0" maxWidth="-Infinity" prefHeight="375.0" prefWidth="391.0" style="-fx-background-color: transparent; -fx-fit-to-width: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="25.0">
+         <content>
+            <FlowPane prefHeight="857.0" prefWidth="762.0" style="-fx-background-color: #0e0e0e;">
+               <children>
+                  <VBox prefHeight="469.0" prefWidth="426.0" style="-fx-background-color: #0e0e0e;">
+                     <children>
+                        <Pane prefHeight="86.0" prefWidth="443.0" style="-fx-background-color: #977b16; -fx-background-image: url(&quot;file:/src/main/resources/imgs/aaa.png&quot;); -fx-background-size: cover;">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="39.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: red;" />
+                              <ImageView fx:id="profile_pic" fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@aaa.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="281.0" prefWidth="487.0">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="66.0" prefHeight="253.0" prefWidth="471.0" style="-fx-background-color: #0a0a0a; -fx-background-radius: 5;">
+                                 <children>
+                                    <Label layoutX="27.0" layoutY="65.0" prefHeight="17.0" prefWidth="46.0" text="Email:" />
+                                    <Label layoutX="27.0" layoutY="89.0" prefHeight="17.0" prefWidth="46.0" text="Date:" />
+                                    <Label layoutX="27.0" layoutY="127.0" prefHeight="17.0" prefWidth="75.0" text="About me:" textFill="#d0a30e">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="email" layoutX="68.0" layoutY="65.0" prefHeight="17.0" prefWidth="170.0" text="faron@gmail.com" />
+                                    <Label fx:id="date" layoutX="68.0" layoutY="89.0" prefHeight="17.0" prefWidth="170.0" text="12/4/2023" />
+                                    <Text fx:id="aboutme" fill="#808080" layoutX="27.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i am who i am , but who am i? a great unanswerable question" wrappingWidth="210.13671875">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="27.0" layoutY="14.0" prefHeight="19.0" prefWidth="126.0" text="General Information:" textFill="#d0a30e">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="27.0" layoutY="42.0" prefHeight="17.0" prefWidth="46.0" text="id:" />
+                                    <Label fx:id="id" layoutX="68.0" layoutY="42.0" prefHeight="17.0" prefWidth="170.0" text="1234" textFill="#bdbf29" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </Pane>
+                              <Label fx:id="fullname" layoutX="120.0" layoutY="-2.0" prefHeight="32.0" prefWidth="165.0" text="Faron Leopold" textFill="#c3c0c0de">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="username" layoutX="120.0" layoutY="24.0" prefHeight="25.0" prefWidth="148.0" text="\@BestUser125" textFill="#8f0c0c" />
+                              <Label fx:id="type_mark" layoutX="333.0" layoutY="6.0" prefHeight="17.0" prefWidth="71.0" text="Producer" textFill="#8f0c0c">
+                                 <font>
+                                    <Font name="Candara Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="type_circle" layoutX="312.0" layoutY="7.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit_" prefHeight="15.0" prefWidth="15.0" style="-fx-padding: 0; -fx-background-color: #8f0c0c; -fx-border-radius: 10; -fx-background-radius: 10;" textFill="#727050">
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                              </Button>
+                              <GridPane fx:id="obb" layoutX="312.0" layoutY="30.0" prefHeight="24.0" prefWidth="83.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="191.0" text="Preferred Actors" textFill="#d0a30e">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <FlowPane fx:id="actors" hgap="20.0" maxWidth="1.7976931348623157E308" minHeight="89.0" prefWidth="680.0" style="-fx-padding: 2;" vgap="20.0">
+                           <padding>
+                              <Insets bottom="100.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="191.0" text="Preferred Series" textFill="#d0a30e">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <FlowPane fx:id="series" hgap="20.0" maxWidth="1.7976931348623157E308" minHeight="89.0" prefWidth="680.0" style="-fx-padding: 2;" vgap="20.0">
+                           <padding>
+                              <Insets bottom="100.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <HBox fx:id="sidebar" layoutX="7.0" layoutY="25.0" prefHeight="375.0" prefWidth="150.0" style="-fx-background-color: #060606;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <VBox prefHeight="375.0" prefWidth="116.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #060606; -fx-text-fill: #c0c4ca;" />
+                  <Button fx:id="profile_button" mnemonicParsing="false" onAction="#switch_to_profile" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #060606; -fx-text-fill: #c0c4ca;" text="Profile">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="home_button" mnemonicParsing="false" onAction="#toMain" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #060606; -fx-text-fill: #c0c4ca;" text="Home" />
+                  <Button fx:id="edit_profile_button" mnemonicParsing="false" onAction="#switch_to_edit_profile" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #060606; -fx-text-fill: #c0c4ca;" text="Edit Profile" />
+                  <Button fx:id="logout_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #060606; -fx-text-fill: #c0c4ca;" text="Logout">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
